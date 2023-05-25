@@ -25,18 +25,18 @@ define('PN_VERSION', '1.0.0');
  */
 function activate_pn() {
 	require_once PN_PLUGIN_ROOT . 'includes/class-pn-activator.php';
-	THWEPO_Activator::activate();
+	PN_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  */
 function deactivate_pn() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-pn-deactivator.php';
-	THWEPO_Deactivator::deactivate();
+	require_once PN_PLUGIN_ROOT . 'includes/class-pn-deactivator.php';
+	PN_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_pn' );
-register_deactivation_hook( __FILE__, 'deactivate_pn' );
+register_activation_hook( PN_FILE , 'activate_pn' );
+register_deactivation_hook( PN_FILE , 'deactivate_pn' );
 
 require PN_PLUGIN_ROOT . 'includes/pn.php';
