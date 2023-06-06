@@ -25,5 +25,9 @@
     },
     "dependencies": {
         "@wordpress/hooks": "^3.5.0"
-    }
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=6.9.0"
+    },
 }

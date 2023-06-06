@@ -39,4 +39,4 @@ function deactivate_pn() {
 register_activation_hook( PN_FILE , 'activate_pn' );
 register_deactivation_hook( PN_FILE , 'deactivate_pn' );
 
-require PN_PLUGIN_ROOT . 'includes/pn.php';
+require PN_PLUGIN_ROOT . 'includes/class-pn.php';
